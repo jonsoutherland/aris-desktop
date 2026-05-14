@@ -54,6 +54,12 @@
       "**/node_modules/bindings/**",
       "**/node_modules/file-uri-to-path/**"
     ],
+    "linux": {
+      "target": [
+        { "target": "AppImage", "arch": ["x64"] }
+      ],
+      "category": "Utility"
+    },
     "win": {
       "target": [
         { "target": "nsis", "arch": ["x64"] }
