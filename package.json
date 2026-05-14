@@ -58,6 +58,7 @@
       "target": [
         { "target": "AppImage", "arch": ["x64"] }
       ],
+      "icon": "build/icon.png",
       "category": "Utility"
     },
     "win": {
