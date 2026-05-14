@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npx electron-vite *)",
+      "Bash(npx electron-rebuild *)",
+      "Bash(Start-Process npm *)",
+      "Bash(Select-Object -ExpandProperty Id)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const p = require\\('pdfjs-dist'\\); console.log\\(Object.keys\\(p\\).filter\\(k => k.toLowerCase\\(\\).includes\\('text'\\) || k.toLowerCase\\(\\).includes\\('layer'\\)\\)\\)\")",
+      "Bash(node --input-type=module -e \"import * as p from 'pdfjs-dist'; console.log\\(Object.keys\\(p\\).filter\\(k => /text|layer/i.test\\(k\\)\\)\\)\")",
+      "Bash(node --input-type=module -e \"import { TextLayer } from 'pdfjs-dist'; console.log\\(TextLayer.toString\\(\\).slice\\(0, 300\\)\\)\")",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(grep -o \"\\\\.width\\\\s*[+\\\\-\\\\*\\\\/=].\\\\{0,60\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"width[^;]\\\\{0,80\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"textAdvanceScale[^;]\\\\{0,120\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"scaleCtmX[^;]\\\\{0,100\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"transform[^;]\\\\{0,120\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"prevTransform[^;]\\\\{0,150\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"getCurrentTextTransform[^;]\\\\{0,200\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"getCurrentTextTransform.\\\\{0,300\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.worker.mjs\")",
+      "Bash(grep -o \"item\\\\.width[^;]\\\\{0,100\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.mjs\")",
+      "Bash(grep -o \"\\\\.width[^;,\\)]\\\\{0,80\\\\}\" \"C:\\\\Code\\\\note taking app\\\\node_modules\\\\pdfjs-dist\\\\build\\\\pdf.mjs\")",
+      "Bash(npx tsc *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Code\\\\note taking app\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(grep -E \"\\\\.\\(tsx|ts\\)$\")",
+      "Bash(Get-ChildItem -Recurse -Filter \"tsconfig*.json\")",
+      "Bash(Select-Object FullName)",
+      "Bash(Get-ChildItem -Recurse -Name)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Code\\\\note taking app\" -Recurse -Force)",
+      "Bash(Sort-Object FullName)",
+      "Bash(xargs wc -l)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Code\\\\note taking app\" -Force | Select-Object -Property Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Directory\"}else{\"File\"}}} | Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Code\\\\note taking app\\\\src\" -Recurse -Depth 2 | Where-Object {-not \\($_.FullName -match 'node_modules'\\)} | Select-Object -Property Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Directory\"}else{\"File\"}}} | Format-Table -AutoSize)",
+      "Bash(mkdir -p \"c:\\\\Code\\\\aris-mobile\\\\src\\\\types\" \"c:\\\\Code\\\\aris-mobile\\\\src\\\\lib\" \"c:\\\\Code\\\\aris-mobile\\\\src\\\\store\" \"c:\\\\Code\\\\aris-mobile\\\\src\\\\components\" \"c:\\\\Code\\\\aris-mobile\\\\src\\\\api\")",
+      "Bash(copy \"c:\\\\Code\\\\note taking app\\\\src\\\\renderer\\\\src\\\\lib\\\\outline.ts\" \"c:\\\\Code\\\\aris-mobile\\\\src\\\\lib\\\\outline.ts\")",
+      "Bash(Get-ChildItem -Path \"c:\\\\Code\\\\note taking app\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Code\\\\note taking app\\\\src\\\\renderer\\\\src\" -Recurse -File)",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "Bash(Sort-Object)",
+      "Bash(Select-Object -First 50)"
+    ],
+    "additionalDirectories": [
+      "c:\\Code\\aris-mobile\\src"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "aris",
+  "version": "1.1.0",
+  "description": "Aris - Knowledge Engine for PDF and Document Engagement",
+  "main": "dist-electron/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "package": "electron-vite build && electron-builder",
+    "postinstall": "electron-rebuild -f -w better-sqlite3",
+    "rebuild": "electron-rebuild -f -w better-sqlite3"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.0.0",
+    "better-sqlite3": "^9.4.3",
+    "clsx": "^2.1.0",
+    "epubjs": "^0.3.93",
+    "lucide-react": "^0.363.0",
+    "pdfjs-dist": "^4.0.379",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4",
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@types/uuid": "^9.0.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.1.0",
+    "postcss": "^8.4.37",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6"
+  },
+  "build": {
+    "appId": "com.aris.app",
+    "productName": "Aris",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist-electron",
+      "dist"
+    ],
+    "asarUnpack": [
+      "**/node_modules/better-sqlite3/**",
+      "**/node_modules/bindings/**",
+      "**/node_modules/file-uri-to-path/**"
+    ],
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Aris"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-electron/
+release/
+
+# electron-vite cache
+.vite/
+
+# Native module build artifacts
+build/Release/
+*.node
+
+# Electron builder
+app-update.yml
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
