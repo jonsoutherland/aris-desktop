@@ -24,7 +24,7 @@ jobs:
         run: npx electron-rebuild -f -w better-sqlite3
 
       - name: Build
-        run: npm run package -- --linux
+        run: npm run package -- --linux --publish never
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
